@@ -1,0 +1,51 @@
+{
+	"cli": true,
+	"target": "directory",
+	"adapterName": "meross-local",
+	"title": "meross-local",
+	"description": "Connect locally with meross smart plugs",
+	"keywords": [
+		"meross",
+		"smart plug",
+		"plug",
+		"consumption",
+		"switch"
+	],
+	"contributors": [
+		"revati"
+	],
+	"expert": "yes",
+	"features": [
+		"adapter"
+	],
+	"adminFeatures": [
+		"tab"
+	],
+	"type": "iot-systems",
+	"startMode": "daemon",
+	"connectionType": "local",
+	"dataSource": "poll",
+	"connectionIndicator": "yes",
+	"language": "JavaScript",
+	"nodeVersion": "24",
+	"adminUi": "json",
+	"tabReact": "no",
+	"tools": [
+		"ESLint",
+		"type checking"
+	],
+	"eslintConfig": "official",
+	"releaseScript": "no",
+	"devServer": "local",
+	"indentation": "Tab",
+	"quotes": "single",
+	"authorName": "revati",
+	"authorGithub": "dev-revati",
+	"authorEmail": "dev.revati.at@gmail.com",
+	"gitRemoteProtocol": "HTTPS",
+	"gitCommit": "yes",
+	"defaultBranch": "main",
+	"license": "MIT License",
+	"dependabot": "no",
+	"creatorVersion": "3.1.5"
+}

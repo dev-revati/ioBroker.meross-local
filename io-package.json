@@ -1,0 +1,132 @@
+{
+	"common": {
+		"name": "meross-local",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"uk": "Початкова версія",
+				"zh-cn": "首次出版"
+			}
+		},
+		"titleLang": {
+			"en": "meross-local",
+			"de": "meross-lokal",
+			"ru": "Мерос-локальный",
+			"pt": "Meross-local",
+			"nl": "meross-lokaal",
+			"fr": "meross-local",
+			"it": "meross-locale",
+			"es": "meross-local",
+			"pl": "meross-lokalny",
+			"uk": "meross-місцевий",
+			"zh-cn": "meross-本地"
+		},
+		"desc": {
+			"en": "Connect locally with meross smart plugs",
+			"de": "Lokal verbinden mit Meross Smart Plugs",
+			"ru": "Подключайтесь локально с помощью интеллектуальных розеток Meross.",
+			"pt": "Conecte-se localmente com plugues inteligentes Meross",
+			"nl": "Maak lokaal verbinding met meross slimme stekkers",
+			"fr": "Connectez-vous localement avec les prises intelligentes Meross",
+			"it": "Connettiti localmente con le migliori prese intelligenti",
+			"es": "Conéctese localmente con enchufes inteligentes meross",
+			"pl": "Połącz się lokalnie za pomocą inteligentnych wtyczek Meross",
+			"uk": "Підключіться локально за допомогою розумних розеток meross",
+			"zh-cn": "使用 meross 智能插头进行本地连接"
+		},
+		"authors": [
+			"revati <dev.revati.at@gmail.com>"
+		],
+		"keywords": [
+			"meross",
+			"smart plug",
+			"plug",
+			"consumption",
+			"switch"
+		],
+		"licenseInformation": {
+			"type": "free",
+			"license": "MIT"
+		},
+		"platform": "Javascript/Node.js",
+		"icon": "meross-local.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/dev-revati/ioBroker.meross-local/main/admin/meross-local.png",
+		"readme": "https://github.com/dev-revati/ioBroker.meross-local/blob/main/README.md",
+		"loglevel": "info",
+		"tier": 3,
+		"mode": "daemon",
+		"type": "iot-systems",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "json",
+			"tab": "materialize"
+		},
+		"adminTab": {
+			"singleton": true,
+			"name": {
+				"en": "meross-local",
+				"de": "meross-lokal",
+				"ru": "Мерос-локальный",
+				"pt": "Meross-local",
+				"nl": "meross-lokaal",
+				"fr": "meross-local",
+				"it": "meross-locale",
+				"es": "meross-local",
+				"pl": "meross-lokalny",
+				"uk": "meross-місцевий",
+				"zh-cn": "meross-本地"
+			},
+			"link": ""
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=6.0.11"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=7.0.23"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}
