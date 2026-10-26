@@ -20,3 +20,8 @@ admin/i18n/*/flat.txt
 admin/jsonConfig.json.bak
 main.js.before-meross-protocol
 main.js.template-backup
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+.venv/
