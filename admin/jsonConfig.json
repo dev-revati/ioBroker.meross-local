@@ -1,26 +1,52 @@
 {
-	"i18n": true,
-	"type": "panel",
-	"items": {
-		"option1": {
-			"type": "checkbox",
-			"label": "option1",
-			"newLine": true,
-			"xs": 12,
-			"sm": 12,
-			"md": 6,
-			"lg": 4,
-			"xl": 4
-		},
-		"option2": {
-			"type": "text",
-			"label": "option2",
-			"newLine": true,
-			"xs": 12,
-			"sm": 12,
-			"md": 6,
-			"lg": 4,
-			"xl": 4
-		}
-	}
+  "i18n": true,
+  "type": "panel",
+  "items": {
+    "merossKey": {
+      "type": "credential",
+      "credentialType": "custom",
+      "label": "Meross Local Key",
+      "sm": 6
+    },
+    "pollInterval": {
+      "type": "number",
+      "label": "pollInterval",
+      "default": 5000,
+      "min": 1000,
+      "step": 1000,
+      "newLine": true,
+      "xs": 12,
+      "sm": 12,
+      "md": 6,
+      "lg": 4,
+      "xl": 4
+    },
+    "devices": {
+      "type": "table",
+      "label": "devices",
+      "noDelete": false,
+      "items": [
+        {
+          "attr": "name",
+          "type": "text",
+          "title": "Name",
+          "width": "50%",
+          "default": ""
+        },
+        {
+          "attr": "ip",
+          "type": "text",
+          "title": "IP-Adresse",
+          "width": "50%",
+          "default": ""
+        }
+      ],
+      "newLine": true,
+      "xs": 12,
+      "sm": 12,
+      "md": 12,
+      "lg": 12,
+      "xl": 12
+    }
+  }
 }

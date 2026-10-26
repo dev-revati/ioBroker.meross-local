@@ -16,3 +16,7 @@ Thumbs.db
 # i18n intermediate files
 admin/i18n/flat.txt
 admin/i18n/*/flat.txt
+# Local development backups
+admin/jsonConfig.json.bak
+main.js.before-meross-protocol
+main.js.template-backup

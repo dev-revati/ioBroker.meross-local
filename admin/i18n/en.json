@@ -1,5 +1,5 @@
 {
-	"meross-local adapter settings": "Adapter settings for meross-local",
-	"option1": "option1",
-	"option2": "option2"
+  "meross-local adapter settings": "Adapter settings for meross-local",
+  "pollInterval": "Polling interval (milliseconds)",
+  "devices": "Meross devices"
 }
